@@ -1,12 +1,12 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Status Projektu
 Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić się, ale nie należy się ich spodziewać często
 
 #### Funkcje
-- [x] Dzwięk
+- [x] Dzwięk ```Experimental```
 - [X] Wzkaźnik baterii
 - [x] Bluetooth
 - [x] Jasność 
@@ -17,19 +17,19 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [ ] Latarka
 - [x] Karta Graficzna  ```Brak x64```
 - [ ] SMS
-- [x] Dotyk 
+- [x] Dotyk ```Problematic. May randomly stop working```
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
 
 #### Sensory
-- [x] Accelerometer
+- [ ] Accelerometer
 - [ ] Odcisk palca
-- [x] GPS
-- [x] Gyroscope
-- [x] Light sensor
-- [x] Proximity
-- [X] NFC ```Tagi NFC działają, inne funkcje związane z NFC też mogą działać```
+- [ ] GPS
+- [ ] Gyroscope
+- [ ] Light sensor
+- [ ] Proximity
+- [ ] NFC
       
 
 

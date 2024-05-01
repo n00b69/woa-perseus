@@ -7,16 +7,16 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [Drivers](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
-- [Devcfg (touch fix)](https://github.com/n00b69/woa-polaris/releases/download/Files/devcfg-polaris.img)
+- [Devcfg (touch fix)](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-polaris.img)
   
-- [UEFI image](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **<path\to\polaris-uefi.img>** with the actual path of the UEFI image
+> Replace **<path\to\perseus-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\polaris-uefi.img>
+fastboot boot <path\to\perseus-uefi.img>
 ```
 
 #### Enabling mass storage mode
@@ -59,7 +59,7 @@ sel par $
 
 #### Formatting Windows drive
 ```cmd
-format quick fs=ntfs label="WINPOLARIS"
+format quick fs=ntfs label="WINPERSEUS"
 ```
 
 #### Add letter to Windows
@@ -75,7 +75,7 @@ sel par $
 
 #### Formatting ESP drive
 ```cmd
-format quick fs=fat32 label="ESPPOLARIS"
+format quick fs=fat32 label="ESPPERSEUS"
 ```
 
 #### Add letter to ESP
@@ -100,10 +100,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Installing Drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> If it asks you to enter a letter, enter the drive letter of **WINPOLARIS** (which should be X), then press enter
-
-> [!WARNING]
-> DO NOT USE DISM++
+> If it asks you to enter a letter, enter the drive letter of **WINPERSEUS** (which should be X), then press enter
   
 #### Create Windows bootloader files
 ```cmd
@@ -132,7 +129,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINPOLARIS**
+> Use `list volume` to find it, replace "$" with the actual number of **WINPERSEUS**
 ```diskpart
 select volume $
 ```
@@ -143,7 +140,7 @@ remove letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **ESPPOLARIS**
+> Use `list volume` to find it, replace "$" with the actual number of **ESPPERSEUS**
 ```diskpart
 select volume $
 ```
@@ -161,17 +158,11 @@ exit
 ### Fixing touch
 > Reboot to fastboot, then replace **path\to** with the actual path to the image
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-polaris.img
+fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```
 
-### Booting Windows
-> Replace **<path\to\firstboot.img>** with the actual path of the UEFI image
-```cmd
-fastboot boot <path\to\firstboot.img>
-```
-
-> [!Important]
-> After Windows boots and you've completed the Windows setup, press **Restart** in the start menu to boot back to Android for the last step
+### Reboot to Android
+> To set up dualboot
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 

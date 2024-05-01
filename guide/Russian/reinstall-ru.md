@@ -1,20 +1,20 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Переустановка Windows
 
 ### Требования
 - [Образ ARM Windows](https://worproject.com/esd)
   
-- [Драйвера](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Драйвера](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
   
-- [Образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
-> Замените **<путь\к\polaris-uefi.img>** действительным путём к образу UEFI
+> Замените **<путь\к\perseus-uefi.img>** действительным путём к образу UEFI
 ```cmd
-fastboot boot <путь\к\polaris-uefi.img>
+fastboot boot <путь\к\perseus-uefi.img>
 ```
 
 #### Включите режим mass storage
@@ -76,7 +76,7 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
-> Введите букву диска **WINPOLARIS** (должна быть X) затем нажмите Enter
+> Введите букву диска **WINPERSEUS** (должна быть X) затем нажмите Enter
 
 ### Загрузка в Windows
 Перезагрузите телефон. Если в итоге он загрузится в Android, а не в Windows, перепрошейте UEFI заново с помощью WOA Helper.

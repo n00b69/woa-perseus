@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Dezinstalacja
 
@@ -12,7 +12,7 @@ Jeśli chcesz ponownie zablokować program ładujący, musisz mieć zapasową ta
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [gpt_both0.bin](https://github.com/n00b69/woa-polaris/releases/download/Files/gpt_both0.bin)
+- [gpt_both0.bin](https://github.com/n00b69/woa-perseus/releases/download/Files/gpt_both0.bin)
 
 ### Instrukcje odinstalowania
 > [!Important]

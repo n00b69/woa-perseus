@@ -101,9 +101,6 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (która powinna być X), a następnie naciśnij enter.
 
-> [!WARNING]
-> NIE UŻYWAJ DISM++
-
 #### Utwórz pliki bootloadera systemu Windows
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI

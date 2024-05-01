@@ -1,12 +1,12 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Статус проекта 
 Проект находится в стадии разработки. Ожидайте некоторых обновлений в будущем.
 
 #### Функции 
-- [x] Аудио
+- [x] Аудио ```Experimental```
 - [X] Статус Батареи
 - [x] Bluetooth
 - [x] Яркость
@@ -22,13 +22,13 @@
 - [x] Wi-Fi
 
 #### Sensors
-- [x] Акселерометр
+- [ ] Акселерометр
 - [ ] Отпечаток пальца
-- [x] GPS
-- [x] Гироскоп
-- [x] Датчик освещенности
-- [x] Датчик приближения
-- [x] NFC
+- [ ] GPS
+- [ ] Гироскоп
+- [ ] Датчик освещенности
+- [ ] Датчик приближения
+- [ ] NFC
 
 
 

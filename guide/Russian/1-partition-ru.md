@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Разметка устройства 
 
@@ -9,15 +9,15 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-polaris/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
-- [Parted](https://github.com/n00b69/woa-polaris/releases/download/Files/parted)
+- [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
 ### Заметки 
 > [!WARNING]  
 > Не выполняйте одну и ту же команду дважды, если не указано иное.
 > 
-> НЕ ПЕРЕЗАГРУЖАЙТЕ ТЕЛЕФОН! Если вы считаете, что допустили ошибку, обратитесь за помощью в [Telegram чате](https://t.me/WinOnMIX2S).
+> НЕ ПЕРЕЗАГРУЖАЙТЕ ТЕЛЕФОН! Если вы считаете, что допустили ошибку, обратитесь за помощью в [Telegram чате](https://t.me/woaperseus).
 > 
 > Не выполняйте все команды сразу, выполняйте их по порядку!
 >
@@ -38,7 +38,7 @@ fastboot flash recovery путь\к\twrp.img reboot recovery
 > **ЕСЛИ ВЫ ПРОДОЛЖИТЕ РАБОТУ БЕЗ РЕЗЕРВНОГО КОПИРОВАНИЯ modem И EFS, ТО В СЛУЧАЕ НЕУДАЧИ ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!**
 
 ### Руководство по разметке
-> Ваш Xiaomi Mix 2s может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
+> Ваш Xiaomi Mix 3 может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
 
 #### Размантируйте data
 - Перейдите к `Монтировать` в TWRP и размонтируйте Data, если она смонтирована

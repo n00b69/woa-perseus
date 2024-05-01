@@ -9,15 +9,15 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-polaris/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
-- [Parted](https://github.com/n00b69/woa-polaris/releases/download/Files/parted)
+- [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
 ### Notes
 > [!WARNING]  
 > Do not run the same command twice unless specified.
 > 
-> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnMIX2S).
+> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/woaperseus).
 > 
 > Do not run all commands at once, execute them in order!
 >
@@ -38,7 +38,7 @@ Use TWRP now to back up your Modem and EFS partition (as well as anything else i
 > **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
 
 ### Partitioning guide
-> Your Xiaomi Mix 2s may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
+> Your Xiaomi Mix 3 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
 
 #### Unmount data
 - Go to "Mount" in TWRP and unmount data, if it is mounted

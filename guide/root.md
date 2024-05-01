@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the Xiaomi Mix 3
 
 ## Root guide
 
@@ -9,13 +9,14 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-polaris/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
 ##### Boot TWRP
 > If your recovery has been replaced back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
+
 ##### Backing up your boot image
 > Sometimes flashing Magisk can cause a bootloop. To fix this, you'll need to restore a boot.img backup.
 

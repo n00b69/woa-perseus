@@ -1,17 +1,17 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Dualboot guide
 
 ### Требования
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [Образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 - [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [Switch To Android пакет](https://github.com/n00b69/woa-polaris/releases/download/Files/polaris-sta.zip)
+- [Switch To Android пакет](https://github.com/n00b69/woa-perseus/releases/download/Files/perseus-sta.zip)
 
 ## Руководство по настройке двойной загрузки
 В этом руководстве предполагается, что у вас есть root-права, если это не так, пожалуйста, сначала следуйте [этому руководству](root-ru.md).

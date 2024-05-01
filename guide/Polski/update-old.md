@@ -1,20 +1,20 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Aktualizowanie sterowników
 
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Sterowniki](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
-- [Obraz UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\polaris-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp **<path\to\perseus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\polaris-uefi.img>
+fastboot boot <path\to\perseus-uefi.img>
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -65,7 +65,7 @@ exit
 ### Instalowanie sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPOLARIS** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (która powinna być X), a następnie naciśnij enter.
 
 ### Uruchom ponownie system Windows
 > Uruchom ponownie urządzenie, aby ponownie uruchomić system Windows. Jeśli spowoduje to uruchomienie systemu Android, ponownie wykonaj flashowanie obrazu UEFI poprzez fastboot lub za pomocą aplikacji WOA Helper

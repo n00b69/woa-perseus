@@ -1,22 +1,22 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Установка Windows
 
 ### Требования
 - [Образ ARM Windows](https://worproject.com/esd)
   
-- [Драйвера](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Драйвера](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
-- [Devcfg исправления touch](https://github.com/n00b69/woa-polaris/releases/download/Files/devcfg-polaris.img)
+- [Devcfg исправления touch](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-perseus.img)
   
-- [Образ UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
-> Замените **<путь\к\polaris-uefi.img>** актуальным путём к образу UEFI
+> Замените **<путь\к\perseus-uefi.img>** актуальным путём к образу UEFI
 ```cmd
-fastboot boot <путь\к\polaris-uefi.img>
+fastboot boot <путь\к\perseus-uefi.img>
 ```
 
 #### Включите режим mass storage
@@ -58,7 +58,7 @@ sel par $
 
 #### Отформатировать раздел Windows
 ```cmd
-format quick fs=ntfs label="WINPOLARIS"
+format quick fs=ntfs label="WINPERSEUS"
 ```
 
 #### Добавить букву к разделу Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Отформатировать раздел ESP
 ```cmd
-format quick fs=fat32 label="ESPPOLARIS"
+format quick fs=fat32 label="ESPPERSEUS"
 ```
 
 #### Добавьте букву к ESP
@@ -98,10 +98,7 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
-> Введите букву диска **WINPOLARIS** (должна быть **X**) затем нажмите Enter
-
-> [!WARNING]
-> НЕ ИСПОЛЬЗУЙТЕ DISM++
+> Введите букву диска **WINPERSEUS** (должна быть **X**) затем нажмите Enter
   
 #### Создать файлы загрузчика Windows
 ```cmd
@@ -130,7 +127,7 @@ diskpart
 ```
 
 #### Выберите раздел Windows телефона
-> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINPOLARIS**
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINPERSEUS**
 ```cmd
 select volume $
 ```
@@ -141,7 +138,7 @@ remove letter x
 ```
 
 #### Выберите раздел ESP телефна
-> Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPPOLARIS**
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPPERSEUS**
 ```cmd
 select volume $
 ```
@@ -159,15 +156,10 @@ exit
 ### Исправить touch
 > Перезагрузитесь в fastboot, затем замените **path\to** путём к образу
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-polaris.img
+fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```
 
-### Перезагрузка в Windows
-> Замените **<путь\к\firstboot.img>** актуальным путём к образу UEFI
-```cmd
-fastboot boot <путь\к\firstboot.img>
-```
-
-> После того как Windows загрузится и вы пройдёте первоначальную настройку, нажмите **Перезагрузка** в меню пуск чтобы загрузиться обратно в Android для последнего шага
+### Перезагрузка в Android
+> Чтобы настроить двойную загрузку
 
 ## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)

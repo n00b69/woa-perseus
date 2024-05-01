@@ -1,17 +1,17 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the Xiaomi Mix 3
 
 ## Dualboot guide
 
 ### Prerequisites
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [UEFI image](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [Switch To Android package](https://github.com/n00b69/woa-polaris/releases/download/Files/polaris-sta.zip)
+- [Switch To Android package](https://github.com/n00b69/woa-perseus/releases/download/Files/perseus-sta.zip)
 
 ## Dualboot guide
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.

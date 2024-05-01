@@ -1,17 +1,17 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the Xiaomi Mix 3
 
 ## Updating drivers
 
 ### Prerequisites
-- [Drivers](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
 ### Boot into Windows
 > Flash the UEFI image in fastboot or use the WOA Helper app
 
 ### Installing Drivers
-> Unpack the driver archive on your Xiaomi Mix 2s in Windows, then open the `OnlineUpdater.cmd` file
+> Unpack the driver archive on your Xiaomi Mix 3 in Windows, then open the `OnlineUpdater.cmd` file
 
 > Follow any instructions provided on the screen
 

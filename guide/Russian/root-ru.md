@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Root guide
 
@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-polaris/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
 ### Запустите TWRP
 > Если ваше recovery было заменено на стоковое, прошейте его ещё раз в fastboot с помощью:

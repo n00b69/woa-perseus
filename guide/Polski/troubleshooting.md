@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Rozwiązywanie problemów
 > Poniżej znajdziesz listę typowych problemów i ich rozwiązań

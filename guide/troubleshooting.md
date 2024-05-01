@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Running Windows on the Xiaomi Mix 2s
+# Running Windows on the Xiaomi Mix 3
 
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
@@ -19,7 +19,7 @@ If mounting Windows produces an empty folder, you either don't have Windows inst
 ##### Finished!
 
 ## USB does not work
-Enable USB host mode using the optional [post install guide](postinstall.md).
+Enable USB host mode using the optional [post install guide](materials.md).
 
 ##### Finished!
 

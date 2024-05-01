@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Tworzenie partycji
 
@@ -9,15 +9,15 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-polaris/releases/download/Files/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
-- [Parted](https://github.com/n00b69/woa-polaris/releases/download/Files/parted)
+- [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
 ### Notes
 > [!Warning]  
 > Nie uruchamiaj tego samego polecenia dwa razy, chyba że określono inaczej.
 > 
-> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [czacie telegramowym](https://t.me/WinOnMIX2S).
+> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [czacie telegramowym](https://t.me/woaperseus).
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
 >
@@ -37,7 +37,7 @@ Użyj TWRP teraz, aby wykonać kopię zapasową modemu i partycji EFS (a także 
 > **JEŚLI KONTYNUUJESZ BEZ KOPII ZAPASOWEJ MODEMU I EFS JEST DUŻE RYZYKO ZE TELEFON NIE BĘDZIE MOGŁ UŻYWAĆ LTE LUB POŁĄCZEŃ**
 
 ### Przewodnik dotyczący partycjonowania
-> Twój Xiaomi Mix 2s może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
+> Twój Xiaomi Mix 3 może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
 
 #### Odmontuj dane
 - Przejdź do "Montuj" w TWRP i odmontuj dane, jeśli są zamontowane

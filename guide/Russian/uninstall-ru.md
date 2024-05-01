@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Запуск Windows на Xiaomi Mix 2s
+# Запуск Windows на Xiaomi Mix 3
 
 ## Удаление
 
@@ -12,7 +12,7 @@
 ### Требования
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [gpt_both0.bin](https://github.com/n00b69/woa-polaris/releases/download/Files/gpt_both0.bin)
+- [gpt_both0.bin](https://github.com/n00b69/woa-perseus/releases/download/Files/gpt_both0.bin)
 
 ### Загрузитесь в fastboot 
 > Удерживайте нажатой кнопку уменьшения громкости + включения, пока телефон выключен, или выполните следующую команду когда он загружен 

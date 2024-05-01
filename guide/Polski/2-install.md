@@ -1,22 +1,22 @@
-<img align="right" src="https://github.com/n00b69/woa-polaris/blob/main/polaris.png" width="350" alt="Windows 11 running on polaris">
+<img align="right" src="https://github.com/n00b69/woa-perseus/blob/main/perseus.png" width="350" alt="Windows 11 running on perseus">
 
-# Windows na Xiaomi Mix 2s
+# Windows na Xiaomi Mix 3
 
 ## Instalacja Windowsa
 
 ### Wymagania
 - [Windows dla ARM](https://worproject.com/esd)
   
-- [Sterowniki](https://github.com/n00b69/woa-polaris/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
-- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-polaris/releases/download/Files/devcfg-polaris.img)
+- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-perseus.img)
   
-- [Obraz UEFI](https://github.com/n00b69/woa-polaris/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\polaris-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp **<path\to\perseus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\polaris-uefi.img>
+fastboot boot <path\to\perseus-uefi.img>
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -58,7 +58,7 @@ sel par $
 
 #### Formatowanie dysku z systemem Windows
 ```cmd
-format quick fs=ntfs label="WINPOLARIS"
+format quick fs=ntfs label="WINPERSEUS"
 ```
 
 #### Dodaj literę do systemu Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Formatowanie ESP
 ```cmd
-format quick fs=fat32 label="ESPPOLARIS"
+format quick fs=fat32 label="ESPPERSEUS"
 ```
 
 #### Dodaj literę do ESP
@@ -99,7 +99,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Instalowanie Sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPOLARIS** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (która powinna być X), a następnie naciśnij enter.
 
 > [!WARNING]
 > NIE UŻYWAJ DISM++
@@ -131,7 +131,7 @@ diskpart
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINPOLARIS**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINPERSEUS**
 ```część dysku
 sel vol $
 ```
@@ -142,7 +142,7 @@ remove letter x
 ```
 
 #### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPPOLARIS**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPPERSEUS**
 ```część dysku
 sel vol $
 ```
@@ -160,16 +160,11 @@ exit
 ### Naprawianie dotyku
 > Uruchom ponownie telefon w trybie fastboot, a następnie zamień **path\to** rzeczywistą ścieżką do obrazu devcfg (który pobrałeś wczesniej)
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-polaris.img
+fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```
 
-### Uruchom ponownie system Windows
-> Zastąp **<path\to\firstboot.img>** rzeczywistą ścieżką obrazu UEFI
-```cmd
-fastboot boot <path\to\firstboot.img>
-```
-> [!Important]
-> Po uruchomieniu systemu Windows i zakończeniu konfiguracji systemu Windows naciśnij **Uruchom ponownie** w menu Start, aby w ostatnim kroku ponownie uruchomić system Android
+### Uruchom ponownie do Androida
+> Uruchom ponownie do Androida aby ustawić dualboot
 
 ## [Ostatni Krok: Ustawianie dualboot](dualboot.md)
 

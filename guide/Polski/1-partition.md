@@ -14,8 +14,7 @@
 - [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
 ### Notes
-> [!Warning]  
-> Nie uruchamiaj tego samego polecenia dwa razy, chyba że określono inaczej.
+> [!Warning]
 > 
 > NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [czacie telegramowym](https://t.me/woaperseus).
 > 
@@ -30,12 +29,12 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 #### Tworzenie kopii zapasowych ważnych plików
-Użyj TWRP teraz, aby wykonać kopię zapasową modemu i partycji EFS (a także czegokolwiek innego, jeśli masz ważne dane). Przenieś tę kopię zapasową w bezpieczne miejsce (np. na swój komputer), ponieważ kolejne kroki spowodują wyczyszczenie danych.
-> [!Warning]
-> Wszystkie Twoje dane zostaną usunięte. To Twoja ostatnia szansa na wykonanie kopii zapasowej.
-> 
-> **JEŚLI KONTYNUUJESZ BEZ KOPII ZAPASOWEJ MODEMU I EFS JEST DUŻE RYZYKO ZE TELEFON NIE BĘDZIE MOGŁ UŻYWAĆ LTE LUB POŁĄCZEŃ**
-
+> Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
+>
+> Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
+```cmd
+cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+```
 ### Przewodnik dotyczący partycjonowania
 > Twój Xiaomi Mix 3 może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
 

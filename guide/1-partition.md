@@ -14,8 +14,7 @@
 - [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
 ### Notes
-> [!WARNING]  
-> Do not run the same command twice unless specified.
+> [!WARNING]
 > 
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/woaperseus).
 > 
@@ -30,12 +29,12 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 #### Backing up important files
-Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
-
-> [!Warning]
-> All of your data will be erased. This is your last chance to back up.
-> 
-> **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
+> This will back up **fsc**, **fsg**, **modemst1** and **modemst2** to the current path your CMD is opened in (for example **C:\platform-tools**). Confirm these files are actually there before proceeding.
+>
+> If you've got anything else you want to back up, do this now. Your Android data will be erased in the next steps.
+```cmd
+cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+```
 
 ### Partitioning guide
 > Your Xiaomi Mix 3 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.

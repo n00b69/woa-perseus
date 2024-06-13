@@ -14,9 +14,9 @@
 - [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **<path\to\perseus-uefi.img>** with the actual path of the UEFI image
+> Replace `path\to\perseus-uefi.img` with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\perseus-uefi.img>
+fastboot boot path\to\perseus-uefi.img
 ```
 
 #### Enabling mass storage mode
@@ -89,18 +89,18 @@ exit
 ```
 
 ### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
 
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
 ### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
-> If it asks you to enter a letter, enter the drive letter of **WINPERSEUS** (which should be X), then press enter
+> If it asks you to enter a letter, enter the drive letter of **WINPERSEUS** (which should be **X**), then press enter
   
 #### Create Windows bootloader files
 ```cmd
@@ -156,7 +156,7 @@ exit
 ```
 
 ### Fixing touch
-> Reboot to fastboot, then replace **path\to** with the actual path to the image
+> Reboot to fastboot, then replace `path\to\devcgf-perseus.img` with the actual path to the image
 ```cmd
 fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```

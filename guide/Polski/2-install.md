@@ -14,9 +14,9 @@
 - [Obraz UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\perseus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp `path\to\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\perseus-uefi.img>
+fastboot boot path\to\perseus-uefi.img
 ```
 
 #### Włączanie trybu pamięci masowej

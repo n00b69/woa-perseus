@@ -28,6 +28,8 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 - Return to the WOA Helper app and press the `Quickboot` button.
 
 ### Setup - Windows
+> [!Tip]
+> If this is your first time booting Windows and you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 - Navigate to C:\sta and create a shortcut of `sta.exe` to your desktop.
 
 #### Booting to Android

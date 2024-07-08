@@ -14,9 +14,9 @@
 - [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
-> Замените **<путь\к\perseus-uefi.img>** актуальным путём к образу UEFI
+> Замените `путь\к\perseus-uefi.img` актуальным путём к образу UEFI
 ```cmd
-fastboot boot <путь\к\perseus-uefi.img>
+fastboot boot путь\к\perseus-uefi.img
 ```
 
 #### Включите режим mass storage
@@ -91,12 +91,12 @@ exit
 > [!Warning]
 > НЕ ИСПОЛЬЗУЙТЕ 24H2!!!
 
-> Замените `<путь\к\install.esd>` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
 ```cmd
-dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
@@ -162,7 +162,13 @@ exit
 fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```
 
-### Перезагрузка в Android
-> Чтобы настроить двойную загрузку
+#### Загрузитесь в UEFI
+> Замените `путь\к\perseus-uefi.img` актуальным путём к образу UEFI
+```cmd
+fastboot boot путь\к\perseus-uefi.img
+```
+
+### Reboot to Android
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
 ## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)

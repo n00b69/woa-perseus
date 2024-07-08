@@ -163,8 +163,14 @@ exit
 fastboot flash devcfg_ab path\to\devcgf-perseus.img
 ```
 
+#### Uruchom do UEFI
+> Zastąp `path\to\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
+```cmd
+fastboot boot path\to\perseus-uefi.img
+```
+
 ### Uruchom ponownie do Androida
-> Uruchom ponownie do Androida aby ustawić dualboot
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
 ## [Ostatni Krok: Ustawianie dualboot](dualboot.md)
 

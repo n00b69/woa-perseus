@@ -12,9 +12,9 @@
 - [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
-> Замените **<путь\к\perseus-uefi.img>** действительным путём к образу UEFI
+> Замените `путь\к\perseus-uefi.img` действительным путём к образу UEFI
 ```cmd
-fastboot boot <путь\к\perseus-uefi.img>
+fastboot boot путь\к\perseus-uefi.img
 ```
 
 #### Включите режим mass storage
@@ -66,12 +66,12 @@ exit
 > Перейдите в Проводник Windows > Этот компьютер и выберите **WINPOLARIS**. Щелкните правой кнопкой мыши и отформатируйте как NTFS.
 
 ### Установка Windows
-> Замените `<путь\к\install.esd>` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
 ```cmd
-dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
@@ -84,8 +84,8 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 #### Настройка Windows
 > Сейчас Windows на вашем устройстве настроится. Это займёт некоторое время. В конечном итоге телефон перезагрузится, и после этого должна запуститься программа начальной установки (oobe).
 
-> [!Note]
-> Если вы не хотите входить в учетную запись Майкрософт, введите "g" в качестве адреса электронной почты и пароля. После этого Windows позволит вам создать локальную учетную запись
+> [!Tip]
+> If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 
 ## Готово!
 

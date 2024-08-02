@@ -50,7 +50,7 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > Your Xiaomi Mix 3 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
 
 #### Unmount data
-- Go to "Mount" in TWRP and unmount data, if it is mounted
+```adb shell umount /dev/block/by-name/userdata```
 
 #### Preparing for partitioning
 > Download the parted file and move it in the platform-tools folder, then run
@@ -65,7 +65,7 @@ print
 ```
 
 #### Removing userdata
-> Replace **$** with the number of the **userdata** partition, which should be **21**
+> Replace **$** with the number of the **userdata** partition, which should be **22**
 ```cmd
 rm $
 ```

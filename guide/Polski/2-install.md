@@ -131,7 +131,7 @@ diskpart
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINPERSEUS**
+> Użyj `list Volume`, aby go znaleźć, zamień **$** na rzeczywistą liczbę **WINPERSEUS**
 ```część dysku
 sel vol $
 ```
@@ -142,7 +142,7 @@ remove letter x
 ```
 
 #### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPPERSEUS**
+> Użyj `list Volume`, aby go znaleźć, zamień **$** na rzeczywistą liczbę **ESPPERSEUS**
 ```część dysku
 sel vol $
 ```
@@ -157,10 +157,12 @@ remove letter y
 exit
 ```
 
-### Naprawianie dotyku
-> Uruchom ponownie telefon w trybie fastboot, a następnie zamień **path\to** rzeczywistą ścieżką do obrazu devcfg (który pobrałeś wczesniej)
+> Przytrzymaj **zmniejszanie głośności** + **zasilanie**, aby wymusić ponowne uruchomienie telefonu w trybie fastboot
+
+#### Naprawianie dotyku
+> Zastąp `path\to\devcfg-perseu.img` rzeczywistą ścieżką obrazu
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-perseus.img
+fastboot flash devcfg_ab path\to\devcfg-perseus.img
 ```
 
 #### Uruchom do UEFI

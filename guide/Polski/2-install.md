@@ -51,7 +51,7 @@ lis par
 ```
 
 #### Wybór partycji Windows
-> Zastąp $ numerem partycji systemu Windows (powinno być 23)
+> Zastąp $ numerem partycji systemu Windows (powinno być 24)
 ```cmd
 sel par $
 ```
@@ -67,7 +67,7 @@ assign letter x
 ```
 
 #### Wybieranie Partycji ESP
-> Zamień $ na numer partycji ESP (powinno być 22)
+> Zamień $ na numer partycji ESP (powinno być 23)
 ```cmd
 sel par $
 ```

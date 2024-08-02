@@ -95,7 +95,7 @@ mkpart win ntfs 32.3GB 123GB
 ```
 
 #### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 22
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 23
 ```cmd
 set $ esp on
 ```

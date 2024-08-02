@@ -6,7 +6,7 @@
 Most things work.
 
 #### Features
-- [x] Audio ```Experimental```
+- [ ] Audio ```Disabled. Can kill the speakers```
 - [X] Battery status
 - [x] Bluetooth
 - [x] Brightness 

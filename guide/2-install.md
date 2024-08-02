@@ -159,9 +159,9 @@ exit
 ```
 
 ### Fixing touch
-> Reboot to fastboot, then replace `path\to\devcgf-perseus.img` with the actual path to the image
+> Reboot to fastboot, then replace `path\to\devcfg-perseus.img` with the actual path to the image
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-perseus.img
+fastboot flash devcfg_ab path\to\devcfg-perseus.img
 ```
 
 #### Boot to the UEFI

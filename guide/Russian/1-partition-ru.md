@@ -50,7 +50,9 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > Ваш Xiaomi Mix 3 может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
 
 #### Размантируйте data
-```adb shell umount /dev/block/by-name/userdata```
+```cmd
+adb shell umount /dev/block/by-name/userdata
+```
 
 #### Подгатовка к разметке 
 > Скачайте файл parted и переместите его в папку platform-tools, затем запустите

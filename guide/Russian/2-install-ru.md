@@ -156,10 +156,13 @@ remove letter y
 exit
 ```
 
-### Исправить touch
-> Перезагрузитесь в fastboot, затем замените **path\to** путём к образу
+### Перезагрузитесь в fastboot
+> Удерживайте кнопку **уменьшение громкости** + **питание**, чтобы перезагрузить телефон в режим fastboot
+
+#### Исправить touch
+> Замените `путь\к\devcfg-perseus.img` актуальным путём к образу
 ```cmd
-fastboot flash devcfg_ab path\to\devcgf-perseus.img
+fastboot flash devcfg_ab путь\к\devcfg-perseus.img
 ```
 
 #### Загрузитесь в UEFI

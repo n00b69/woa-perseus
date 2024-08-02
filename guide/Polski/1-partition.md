@@ -49,7 +49,7 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > Twój Xiaomi Mix 3 może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
 
 #### Odmontuj dane
-- Przejdź do "Montuj" w TWRP i odmontuj dane, jeśli są zamontowane
+```adb shell umount /dev/block/by-name/userdata```
 
 #### Przygotowanie do partycjonowania
 > Pobierz plik parted i przenieś go do folderu platform-tools, a następnie uruchom
@@ -64,7 +64,7 @@ print
 ```
 
 #### Usuwanie userdata
-> Zamień **$** na numer partycji **userdata**, który powinien wynosić **21**
+> Zamień **$** na numer partycji **userdata**, który powinien wynosić **22**
 ```cmd
 rm $
 ```
@@ -94,7 +94,7 @@ mkpart win ntfs 32.3GB 123GB
 ```
 
 #### Tworzenie bootowalnego ESP
-> Użyj `print`, aby zobaczyć wszystkie partycje. Zamień „$” na numer partycji ESP, który powinien wynosić 22
+> Użyj `print`, aby zobaczyć wszystkie partycje. Zamień „$” na numer partycji ESP, który powinien wynosić 23
 ```cmd
 set $ esp on
 ```

@@ -52,7 +52,7 @@ lis par
 ```
 
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 23)
+> Replace $ with the partition number of Windows (should be 24)
 ```cmd
 sel par $
 ```
@@ -68,7 +68,7 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 22)
+> Replace $ with the partition number of ESP (should be 23)
 ```cmd
 sel par $
 ```

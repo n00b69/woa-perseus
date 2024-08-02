@@ -90,13 +90,13 @@ mkpart esp fat32 32GB 32.3GB
 #### Tworzenie partycji Windows
 > Zastąp **32.3GB** wartością końcową **esp**
 >
-> Zamień **123GB** na końcową wartość dysku, użyj `p free`, aby go znaleźć
+> Zamień **122GB** na końcową wartość dysku, użyj `p free`, aby go znaleźć
 ```cmd
-mkpart win ntfs 32.3GB 123GB
+mkpart win ntfs 32.3GB 122GB
 ```
 
 #### Tworzenie bootowalnego ESP
-> Użyj `print`, aby zobaczyć wszystkie partycje. Zamień „$” na numer partycji ESP, który powinien wynosić 23
+> Użyj `print`, aby zobaczyć wszystkie partycje. Zamień **$** na numer partycji ESP, który powinien wynosić 23
 ```cmd
 set $ esp on
 ```

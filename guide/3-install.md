@@ -9,7 +9,7 @@
   
 - [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
-- [Devcfg (touch fix)](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-polaris.img)
+- [Devcfg (touch fix)](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-perseus.img)
   
 - [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 

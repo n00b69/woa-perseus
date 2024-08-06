@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
+- [Modded TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
 
 - [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
 
@@ -38,12 +38,20 @@ cd путь\к\platform-tools
 fastboot flash recovery путь\к\twrp.img reboot recovery
 ```
 
-#### Создание резервной копии важных файлов
+### Создание резервной копии важных файлов
 > Это создаст бэкап **fsc**, **fsg**, **modemst1** и **modemst2** в текущем расположении, где открыта ваша командная строка (например **C:\platform-tools**). Убедитесь, что эти файлы действительно сдесь, прежде чем продолжить.
+> 
+> Сохраните эти резервные копии в надежном месте. Если программное обеспечение вашего устройства однажды будет уничтожено, вам могут понадобиться эти резервные копии, иначе ваш телефон может потерять возможности сотовой связи.
 >
 > Если вы хотите создать резервную копию чего-либо ещё, сделайте это сейчас. Ваши данные в Android будут удалены в ходе следующих действий.
 ```cmd
 cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+```
+
+#### Бэкап вашего boot образа
+> Это позволит создать резервную копию вашего текущего загрузочного образа в текущем каталоге.
+```cmd
+adb pull /dev/block/by-name/boot boot.img
 ```
 
 ### Руководство по разметке
@@ -115,4 +123,4 @@ quit
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 
-## [Следующий шаг: Установка Windows](2-install-ru.md)
+## [Следующий шаг: Установка Windows](2-root-ru.md)

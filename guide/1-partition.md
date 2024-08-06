@@ -40,6 +40,8 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 
 ### Backing up important files
 > This will back up **fsc**, **fsg**, **modemst1** and **modemst2** to the current path your CMD is opened in (for example **C:\platform-tools**). Confirm these files are actually there before proceeding.
+> 
+> Keep these backups in a safe place. If your device's software ever gets destroyed, you might need these backups or your phone could lose cellular capabilities.
 >
 > If you've got anything else you want to back up, do this now. Your Android data will be erased in the next steps.
 ```cmd

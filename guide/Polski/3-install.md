@@ -14,9 +14,9 @@
 - [Obraz UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp `path\to\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
+> Zastąp `ścieżka\do\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot path\to\perseus-uefi.img
+fastboot boot ścieżka\do\perseus-uefi.img
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -91,16 +91,18 @@ exit
 > [!WARNING]
 > NIE UŻYWAJ 24H2!!!
 
-> Zamień `<path\to\install.esd>` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim)
-
+> Zamień `ścieżka\do\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim lub 22631.2861.XXXXXXX.esd)
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Jeśli pojawi się komunikat `Błąd 87`, sprawdź indeks obrazu za pomocą polecenia `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, a następnie zastąp `index:6` rzeczywistym numerem indeksu systemu Windows 11 Pro na Twoim obrazie
+> Jeśli pojawi się komunikat `Błąd 87`, sprawdź indeks obrazu za pomocą polecenia `dism /get-imageinfo /ImageFile:ścieżka\do\install.esd`, a następnie zastąp `index:6` rzeczywistym numerem indeksu systemu **Windows 11 Pro** w Twoim obrazie
 
-### Instalowanie Sterowników
-> Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
+### Kopiowanie obrazu rozruchu do Windowsa
+- Zaznacz i upuść **root.img** z poprzedniego kroku do **WINPERSEUS** w eksploratorze plików, a następnie zmień mu nazwę na **boot.img**.
+
+### Instalowanie sterowników
+- Wypakuj archiwum ze sterownikami, a następnie otwórz plik `OfflineUpdater.cmd` (jeśli pojawi się błąd, otwórz `OfflineUpdaterFix.cmd`)
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (która powinna być X), a następnie naciśnij enter.
 
@@ -160,21 +162,21 @@ exit
 > Przytrzymaj **zmniejszanie głośności** + **zasilanie**, aby wymusić ponowne uruchomienie telefonu w trybie fastboot
 
 #### Naprawianie dotyku
-> Zastąp `path\to\devcfg-perseu.img` rzeczywistą ścieżką obrazu
+> Zastąp `ścieżka\do\devcfg-perseu.img` rzeczywistą ścieżką obrazu
 ```cmd
-fastboot flash devcfg_ab path\to\devcfg-perseus.img
+fastboot flash devcfg_ab ścieżka\do\devcfg-perseus.img
 ```
 
 #### Uruchom do UEFI
-> Zastąp `path\to\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
+> Zastąp `ścieżka\do\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot path\to\perseus-uefi.img
+fastboot boot ścieżka\do\perseus-uefi.img
 ```
 
-### Uruchom ponownie do Androida
-Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
+### Uruchamianie ponownie do Androida
+Telefon powinien uruchomić się ponownie sam po +- 10 minutach czekania, po których uruchomi się Android, aby wykonać ostatni krok.
 
-## [Ostatni Krok: Ustawianie dualboot](dualboot.md)
+## [Ostatni krok: Konfiguracja dualboot](4-dualboot.md)
 
 
 

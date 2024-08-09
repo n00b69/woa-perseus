@@ -27,24 +27,33 @@
 >
 > Zaleca się pozostawienie tego okna otwartego i korzystanie z niego przez cały przewodnik.
 > 
-> Zastąp `path\to\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
+> Zastąp `ścieżka\do\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
 ```cmd
-cd path\to\platform-tools
+cd ścieżka\do\platform-tools
 ```
 
 #### Zflashuj TWRP
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie szybkiego uruchamiania) uruchom
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery ścieżka\do\twrp.img reboot recovery
 ```
 
-#### Tworzenie kopii zapasowych ważnych plików
+### Tworzenie kopii zapasowych ważnych plików
 > Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
->
+> 
+> Trzymaj tę kopię zapasową w bezpiecznym miejscu. Jeśli oprogramowanie Twojego urządzenia kiedykolwiek ulegnie uszkodzeniu, możesz potrzebować tej kopii, gdyż w przeciwnym wypadku telefon może już nigdy nie być w stanie wykonywać połączeń.
+> 
 > Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
 cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
 ```
+
+#### Tworzenie kopii zapasowych obrazu rozruchu
+> Spowoduje to utworzenie kopii zapasowej obecnego obrazu rozruchu w bieżącej ścieżce
+```cmd
+adb pull /dev/block/by-name/boot boot.img
+```
+
 ### Przewodnik dotyczący partycjonowania
 > Twój Xiaomi Mix 3 może mieć różne rozmiary pamięci. Ten przewodnik używa wartości modelu 128GB jako przykładu. W razie potrzeby przewodnik wspomni, czy można lub należy użyć innych wartości.
 
@@ -113,8 +122,7 @@ quit
 #### Sprawdź, czy Android nadal się uruchamia
 - Po prostu uruchom ponownie telefon i sprawdź, czy Android nadal działa
 
-
-## [Następny Krok](2-install.md)
+## [Następny krok: Rootowanie telefonu](2-root.md)
 
 
 

@@ -141,7 +141,7 @@ mountvol y: /d
 fastboot flash devcfg_ab ścieżka\do\devcfg-perseus.img
 ```
 
-#### Uruchom do UEFI
+#### Uruchamianie do UEFI
 > Zastąp `ścieżka\do\perseus-uefi.img` rzeczywistą ścieżką obrazu UEFI
 ```cmd
 fastboot boot ścieżka\do\perseus-uefi.img

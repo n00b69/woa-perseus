@@ -128,37 +128,10 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Unassign disk letters
-> So that they don't stay there after disconnecting the device
+#### Remove the drive letter for ESP
+> If this does not work, ignore it and skip to the next command. This phantom drive will disappear the next time you reboot your PC.
 ```cmd
-diskpart
-```
-
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINPERSEUS**
-```diskpart
-select volume $
-```
-
-#### Unassign the letter X
-```diskpart
-remove letter x
-```
-
-#### Select the ESP volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **ESPPERSEUS**
-```diskpart
-select volume $
-```
-
-#### Unassign the letter Y
-```diskpart
-remove letter y
-```
-
-#### Exit diskpart
-```diskpart
-exit
+mountvol y: /d
 ```
 
 ### Fixing touch

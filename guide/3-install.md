@@ -140,7 +140,7 @@ mountvol y: /d
 fastboot flash devcfg_ab path\to\devcfg-perseus.img
 ```
 
-#### Boot to the UEFI
+#### Boot into the UEFI
 > Replace `path\to\perseus-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\perseus-uefi.img

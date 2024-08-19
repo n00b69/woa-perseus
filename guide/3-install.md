@@ -28,58 +28,29 @@ fastboot boot path\to\perseus-uefi.img
 ### Diskpart
 > [!WARNING]
 > DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
-
 ```cmd
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
-```cmd
-lis dis
-```
+#### Select the Windows volume of the phone
+> Use `list volume` to find it, replace `$` with the actual number of **WINPERSEUS**
+```diskpart
+select volume $
+``` 
 
-#### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
-```cmd
-sel dis $
-```
-
-#### Listing your phone's partitions
-> This will list your device's partitions
-```cmd
-lis par
-```
-
-#### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 24)
-```cmd
-sel par $
-```
-
-#### Formatting Windows drive
-```cmd
-format quick fs=ntfs label="WINPERSEUS"
-```
-
-#### Add letter to Windows
-```cmd
+#### Assign the letter X
+```diskpart
 assign letter x
-```
+``` 
 
-#### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 23)
-```cmd
-sel par $
-```
+#### Select the ESP volume of the phone
+> Use `list volume` to find it, replace `$` with the actual number of **ESPPERSEUS**
+```diskpart
+select volume $
+``` 
 
-#### Formatting ESP drive
-```cmd
-format quick fs=fat32 label="ESPPERSEUS"
-```
-
-#### Add letter to ESP
-```cmd
+#### Assign the letter Y
+```diskpart
 assign letter y
 ```
 

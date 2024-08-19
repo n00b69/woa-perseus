@@ -32,54 +32,26 @@ fastboot boot путь\к\perseus-uefi.img
 diskpart
 ```
 
-#### Найдите ваш телефон
-> При этом отобразится список всех подключенных дисков
-```cmd
-lis dis
-```
-
-#### Выберите ваш телефон
-> Замените `$` актуальным номером вашего телефона (должен быть последним)
-```cmd
-sel dis $
-```
-
-#### Отобразить список разделов вашего телефона
-> Это отобразит список разделов вашего телефона 
-```cmd
-lis par
-```
-
 #### Выбрать раздел Windows 
-> Замените `$` номером раздела Windows (должен быть 24)
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINPERSEUS**
 ```cmd
-sel par $
-```
-
-#### Отформатировать раздел Windows
-```cmd
-format quick fs=ntfs label="WINPERSEUS"
-```
+select volume $
+``` 
 
 #### Добавить букву к разделу Windows
 ```cmd
-assign letter X
-```
+assign letter x
+``` 
 
-#### Выбhfnm раздел ESP
-> Замените `$` номером раздела ESP (должен быть 23)
+#### Выбрать раздел ESP
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPPERSEUS**
 ```cmd
-sel par $
-```
-
-#### Отформатировать раздел ESP
-```cmd
-format quick fs=fat32 label="ESPPERSEUS"
-```
+select volume $
+``` 
 
 #### Добавьте букву к ESP
 ```cmd
-assign letter Y
+assign letter y
 ```
 
 #### Выйти из diskpart

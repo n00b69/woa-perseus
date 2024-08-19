@@ -56,7 +56,7 @@ dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 > Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
 ### Установка драйверов
-> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
+- Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
 > Введите букву диска **WINPERSEUS** (должна быть X) затем нажмите Enter
 

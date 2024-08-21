@@ -117,7 +117,7 @@ quit
 
 ### Formatting Windows drive
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINPERSEUS
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINPERSEUS
 ``` 
 
 ### Formatting ESP drive

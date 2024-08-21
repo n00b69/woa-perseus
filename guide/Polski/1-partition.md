@@ -117,7 +117,7 @@ quit
 
 ### Formatowanie dysku z systemem Windows
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINPERSEUS
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINPERSEUS
 ``` 
 
 ### Formatowanie dysku z systemem ESP

@@ -117,7 +117,7 @@ quit
 
 ### Отформатировать раздел Windows
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINPERSEUS
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINPERSEUS
 ``` 
 
 ### Отформатировать раздел ESP

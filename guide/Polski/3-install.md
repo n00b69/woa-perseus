@@ -76,7 +76,7 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 ### Instalowanie sterowników
 - Wypakuj archiwum ze sterownikami, a następnie otwórz plik `OfflineUpdater.cmd` (jeśli pojawi się błąd, otwórz `OfflineUpdaterFix.cmd`)
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (którą powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINPERSEUS** (którą powinna być **X**), a następnie naciśnij enter.
 
 #### Tworzenie plików bootloadera systemu Windows
 ```cmd

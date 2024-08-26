@@ -5,13 +5,13 @@
 ## Установка Windows
 
 ### Требования
+- [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
+
 - [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
 - [Devcfg исправления touch](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-perseus.img)
-  
-- [Образ UEFI](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
 ### Загрузитесь в UEFI
 > Замените `путь\к\perseus-uefi.img` актуальным путём к образу UEFI

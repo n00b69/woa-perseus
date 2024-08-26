@@ -5,15 +5,15 @@
 ## Installing Windows
 
 ### Prerequisites
+- [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
+
 - [Windows on ARM image](https://worproject.com/esd)
   
 - [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
 
 - [Devcfg (touch fix)](https://github.com/n00b69/woa-perseus/releases/download/Files/devcfg-perseus.img)
-  
-- [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
-### Boot to the UEFI
+### Boot into the UEFI
 > Replace `path\to\perseus-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\perseus-uefi.img

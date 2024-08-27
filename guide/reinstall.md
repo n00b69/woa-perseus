@@ -5,13 +5,13 @@
 ## Reinstalling Windows
 
 ### Prerequisites
-- [Windows on ARM image](https://worproject.com/esd)
-
-- [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
-  
 - [UEFI image](https://github.com/n00b69/woa-perseus/releases/tag/UEFI)
 
-### Boot to the UEFI
+- [Windows on ARM image](https://arkt-7.github.io/woawin/)
+
+- [Drivers](https://github.com/n00b69/woa-perseus/releases/tag/Drivers)
+
+### Boot into the UEFI
 > Replace `path\to\perseus-uefi.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\perseus-uefi.img

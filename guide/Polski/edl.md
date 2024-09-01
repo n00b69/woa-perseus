@@ -2,7 +2,7 @@
 
 # Windows na Xiaomi Mix 3
 
-## Przywracanie urządzenia za pomocą trybu EDL.
+## Przywracanie urządzenia za pomocą trybu EDL
 
 ### Wymagania
 - [Oryginalny ROM fastboot](https://xmfirmwareupdater.com/miui/perseus/)

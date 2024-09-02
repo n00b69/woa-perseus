@@ -25,7 +25,7 @@ Most things work.
 #### Sensors
 - [ ] Accelerometer
 - [ ] Fingerprint
-- [ ] GPS
+- [x] GPS
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Proximity

@@ -6,7 +6,7 @@
 Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić się, ale nie należy się ich spodziewać często
 
 #### Funkcje
-- [ ] Dzwięk ```Wylączone, może uszkodzić głośniki.```
+- [x] Dzwięk ```Should work, unconfirmed```
 - [X] Wzkaźnik baterii
 - [x] Bluetooth
 - [x] Jasność 
@@ -17,7 +17,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [ ] Latarka
 - [x] Karta Graficzna  ```Brak x64```
 - [ ] SMS
-- [x] Dotyk ```Problematic. May randomly stop working```
+- [x] Dotyk
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi

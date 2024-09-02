@@ -25,7 +25,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 #### Sensory
 - [ ] Accelerometer
 - [ ] Odcisk palca
-- [ ] GPS
+- [x] GPS
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Proximity

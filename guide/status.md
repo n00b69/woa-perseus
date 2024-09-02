@@ -6,7 +6,7 @@
 Most things work.
 
 #### Features
-- [ ] Audio ```Disabled. Can kill the speakers```
+- [x] Audio ```Should work, unconfirmed```
 - [X] Battery status
 - [x] Bluetooth
 - [x] Brightness 
@@ -17,7 +17,7 @@ Most things work.
 - [ ] Flashlight
 - [x] GPU  ```No x64 acceleration```
 - [ ] SMS
-- [x] Touchscreen ```Problematic. May randomly stop working```
+- [x] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi

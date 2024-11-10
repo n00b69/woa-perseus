@@ -114,6 +114,9 @@ fastboot flash devcfg_ab path\to\devcfg-perseus.img
 
 #### Boot into the UEFI
 > Replace `path\to\perseus-uefi.img` with the actual path of the UEFI image
+
+> [!Important]
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
 ```cmd
 fastboot boot path\to\perseus-uefi.img
 ```

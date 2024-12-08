@@ -17,7 +17,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [ ] Latarka
 - [x] Karta Graficzna  ```Brak x64```
 - [ ] SMS
-- [x] Dotyk
+- [ ] Dotyk
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi

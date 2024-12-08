@@ -17,7 +17,7 @@ Most things work.
 - [ ] Flashlight
 - [x] GPU  ```No x64 acceleration```
 - [ ] SMS
-- [x] Touchscreen
+- [ ] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi

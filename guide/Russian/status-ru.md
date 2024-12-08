@@ -16,7 +16,7 @@
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
 - [ ] СМС
-- [x] Touchscreen
+- [ ] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi

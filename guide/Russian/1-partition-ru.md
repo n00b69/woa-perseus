@@ -9,9 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Modded TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
-
-- [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
+- [Модифицированный OFOX](https://github.com/n00b69/woa-perseus/releases/download/Files/modded-ofox-perseus.img)
 
 ### Заметки 
 > [!WARNING]
@@ -57,19 +55,24 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 adb pull /dev/block/by-name/boot boot.img
 ```
 
-### Руководство по разметке
-> Ваш Xiaomi Mix 3 может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
+### Partitioning your device
+> There are two methods to partition your device. Please select the method you would like to use below. 
+
+#### Method 1: Manual partitioning 
+
+<details>
+  <summary><strong>Click here for method 1</strong></summary> 
 
 #### Размантируйте data
+> Ignore any possible errors and continue
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
 
-#### Подгатовка к разметке 
-> Скачайте файл parted и переместите его в папку platform-tools, затем запустите
+#### Подгатовка к разметке
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
-```
+adb shell parted /dev/block/sda
+``` 
 
 #### Отобразить текущую таблицу разделов
 > Parted выведет список разделов, userdata должна быть последним разделом в списке.
@@ -86,7 +89,7 @@ rm $
 #### Заново создать userdata
 > Замените **1611MB** с прежним начальным значением **userdata** который мы только что удалили (вероятно, это 1611МБ)
 >
-> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела
+> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела. In this example your available usable space in Android will be 32GB-1611MB = **30GB**
 ```cmd
 mkpart userdata ext4 1611MB 32GB
 ```
@@ -101,14 +104,12 @@ mkpart esp fat32 32GB 32.3GB
 
 #### Создать раздел Windows
 > Замените **32.3GB** с конечным значением **esp**
->
-> Замените **122GB** на конечное значение вашего диска, используйте `p free`, чтобы найти его
 ```cmd
-mkpart win ntfs 32.3GB 122GB
+mkpart win ntfs 32.3GB -0MB
 ```
 
 #### Сделать ESP загрузочным
-> Используйте `print` чтобы отобразиь все разделы. Замените `$` с вашим номером раздела ESP, который должен быть 23
+> Используйте `print` чтобы отобразиь все разделы. Замените `$` с вашим номером раздела ESP, который должен быть **`23`**
 ```cmd
 set $ esp on
 ```
@@ -118,18 +119,6 @@ set $ esp on
 quit
 ```
 
-### Отформатировать раздел Windows
-> [!note]
-> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
-```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINPERSEUS
-``` 
-
-### Отформатировать раздел ESP
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPPERSEUS
-```
-
 ### Отформатировать data
 - Отформатируйте все данные в TWRP, иначе Android не загрузится.
 - (Перейдите к `Wipe` > `Format data` > напечатайте `yes`)
@@ -137,5 +126,51 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPPERSEUS
 #### Проверьте, запускается ли Android 
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
+### Форматирование дисков Windows и ESP
+> Reboot into the modded recovery, then run the below two commands
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINPERSEUS
+``` 
+
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPPERSEUS
+```
+
+</details>
+
+#### Method 2: Automatic partitioning 
+
+<details>
+  <summary><strong>Click here for method 2</strong></summary> 
+
+### Запустите скрипт разметки 
+> Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
+> 
+> Если скрипт попросит запустить его ещё раз, то так и сделайте
+```cmd
+adb shell partition $
+```
+
+### Проверьте, запускается ли Android 
+- Просто перезагрузите телефон и посмотрите, загружается ли Android
+
+</details>
 
 ## [Следующий шаг: Получение root прав](2-root-ru.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

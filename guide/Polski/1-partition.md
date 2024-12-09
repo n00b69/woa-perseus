@@ -9,9 +9,7 @@
 
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woa-perseus/releases/download/Files/twrp.img)
-
-- [Parted](https://github.com/n00b69/woa-perseus/releases/download/Files/parted)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-perseus/releases/download/Files/modded-ofox-perseus.img)
 
 ### Uwagi
 > [!Warning]
@@ -35,10 +33,10 @@ cd ścieżka\do\platform-tools
 > [!Note]
 > If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting.md#device-is-not-recognized-in-fastboot-or-recovery)
 
-#### Instalacja TWRP
-> Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie szybkiego uruchamiania) uruchom
+#### Flashuj zmodyfikowane recovery OFOX
+> Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) wpisz
 ```cmd
-fastboot flash recovery ścieżka\do\twrp.img reboot recovery
+fastboot flash recovery ścieżka\do\modded-ofox-perseus.img reboot recovery
 ```
 
 ### Tworzenie kopii zapasowej ważnych plików

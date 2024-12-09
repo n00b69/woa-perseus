@@ -54,6 +54,9 @@ exit
 
 ### Uruchom ponownie urządzenie
 > Pamiętaj, aby zmienić także obraz UEFI w systemie Android, w przeciwnym razie podczas późniejszego uruchamiania systemu Windows może pojawić się „niebieski ekran śmierci” (BSoD).
+```cmd
+adb reboot
+```
 
 ## Skończone!
 

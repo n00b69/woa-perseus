@@ -17,7 +17,7 @@ If you want to relock your bootloader you'll need your partition table to be sto
 
 ### Uninstall instructions
 > [!Important]
-> There is a very small chance this guide might not work if your partition table is completely fucked up. If you find yourself not being able to boot to recovery / Android after, you will have to reflash your device with EDL.
+> There is a very small chance this guide might not work if your partition table is completely fucked up. If you find yourself not being able to boot to recovery / Android after, you will have to reflash your device with [EDL](edl.md).
 
 #### Boot into fastboot mode
 > Hold the volume down + power button while the phone is turned off, or run the following command while it is booted
@@ -32,7 +32,8 @@ adb reboot bootloader
 fastboot flash partition:0 path\to\gpt_both0.bin
 ```
 
-#### Erase userdata to avoid a bootloop and restore FS size
+#### Erase userdata
+> To avoid a bootloop and restore FS size
 ```cmd
 fastboot -w
 ```

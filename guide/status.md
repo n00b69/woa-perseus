@@ -3,7 +3,7 @@
 # Running Windows on the Xiaomi Mix 3
 
 ## Project Status
-Most things work.
+This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
 
 #### Features
 - [x] Audio ```Should work, unconfirmed```
@@ -11,7 +11,7 @@ Most things work.
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] LTE ```Problematic```
+- [x] LTE ```if LTE does not work, follow [these steps](troubleshooting.md#lte-in-windows-does-not-work)
 - [x] Charging ```VERY slow```
 - [x] Display
 - [ ] Flashlight

@@ -3,7 +3,7 @@
 # Запуск Windows на Xiaomi Mix 3
 
 ## Статус проекта 
-Проект находится в стадии разработки. Ожидайте некоторых обновлений в будущем.
+This project is currently not being maintained, updates may eventually appear, but don't expect them frequently or at all
 
 #### Функции 
 - [x] Аудио ```Should work, unconfirmed```
@@ -11,7 +11,7 @@
 - [x] Bluetooth
 - [x] Яркость
 - [ ] Камера
-- [x] LTE ```if LTE does not work, follow [these steps](troubleshooting-ru.md#lte-in-windows-does-not-work)```
+- [x] LTE ```if LTE does not work, follow``` [these steps](troubleshooting.md#lte-in-windows-does-not-work)
 - [x] Зарядка ```ОЧЕНЬ медленно```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```

@@ -17,7 +17,7 @@ This project is currently not being maintained, updates may eventually appear, b
 - [ ] Flashlight
 - [x] GPU  ```No x64 acceleration```
 - [ ] SMS
-- [ ] Touchscreen
+- [x] Touchscreen ```Appears to only work in Windows 10?```
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
